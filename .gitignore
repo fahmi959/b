@@ -1,2 +1,6 @@
 # Ignore .cache folder
 .cache/
+
+
+serviceAccountKey.json
+bot-unnes-telegram-firebase-adminsdk-7f07u-ae6d5dcc83.json
