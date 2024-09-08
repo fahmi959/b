@@ -1,2 +1,3 @@
-python-telegram-bot
-firebase-admin
+streamlit==1.21.0
+python-telegram-bot==13.7
+firebase-admin==6.5.0
