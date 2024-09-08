@@ -1,0 +1,1 @@
+{"version":2,"languages":{"python3-poetry":{"specfileHash":"9b216ecbac6ec436ec01f8756c01b9c1","lockfileHash":"598cab94b5567f2a9da27bcf366eb244","guessedImports":["telegram","firebase-admin","google-api-core","pytz"],"guessedImportsHash":"89c15f3c39b3965449bb7efef0871536"}}}
