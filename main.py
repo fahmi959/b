@@ -5,10 +5,18 @@ from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, Callb
 from firebase_admin import storage
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import CallbackQueryHandler
+import os
 
 # Inisialisasi Firebase
-cred = credentials.Certificate(
-    "bot-unnes-telegram-firebase-adminsdk-7f07u-ae6d5dcc83.json")
+# cred = credentials.Certificate(
+#     "bot-unnes-telegram-firebase-adminsdk-7f07u-f128960c28.json")
+# Menentukan path absolut berdasarkan direktori kerja saat ini
+current_dir = os.path.dirname(os.path.abspath(__file__))
+json_path = os.path.join(current_dir, "bot-unnes-telegram-firebase-adminsdk-7f07u-f128960c28.json")
+
+cred = credentials.Certificate(json_path)
+
+
 firebase_admin.initialize_app(
     cred,
     {
@@ -255,7 +263,6 @@ def next_chat(update: Update, context: CallbackContext):
 from datetime import datetime
 import pytz
 import logging
-import os
 
 # Setup basic logging configuration
 logging.basicConfig(level=logging.INFO,
